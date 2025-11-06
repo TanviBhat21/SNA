@@ -25,7 +25,7 @@ try:
     yolo_model = YOLO(MODEL_PATH)
 except Exception:
     from ultralytics import YOLO as DefaultYOLO
-    yolo_model = DefaultYOLO('yolov11n.pt')
+    yolo_model = DefaultYOLO('yolo11n.pt')
 
 
 def safe_float(val, default=0):
